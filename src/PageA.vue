@@ -13,7 +13,16 @@ const route = useRoute();
 const router = useRouter();
 
 setTimeout(() => {
-  router.push('/pageB');
+  router.push({
+    name: 'userpage',
+    params: {
+      userId: 12345,
+    },
+    query: {
+      name: 'jean',
+    },
+    hash: '#salut',
+  });
 }, 5000);
 
 watch(

@@ -7,6 +7,6 @@ export const routes: RouteRecordRaw[] = [
   // { path: '/a/A', component: PageA, sensitive: true },
   { path: '/a/:userId', component: PageA },
   { path: '/a/:age(\\d+)', component: PageA },
-  { path: '/b', component: PageB },
+  { path: '/b/:userId', component: PageB, name: 'userpage' },
   { path: '/:notfound(.*)', component: PageB },
 ];
